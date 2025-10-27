@@ -1,0 +1,15 @@
+{
+  "name": "Entrega1_IrinaIf",
+  "version": "1.0.0",
+  "description": "Servidor Backend para gestionar productos y carritos",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Irina Inga Fernandez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
