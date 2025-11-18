@@ -1,5 +1,47 @@
 [
   {
-    "id": 1
+    "id": 1,
+    "title": "Producto nuevo",
+    "description": "producto destacado",
+    "code": "ABC123",
+    "price": 3000,
+    "stock": 50,
+    "category": "prueba",
+    "thumbnails": [
+      "img1.jpg"
+    ],
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "Nuevo",
+    "description": "destacado",
+    "code": "x123",
+    "price": 1000,
+    "status": true,
+    "stock": 10,
+    "category": "Test",
+    "thumbnails": []
+  },
+  {
+    "id": 3,
+    "title": "segundo",
+    "description": "destacado",
+    "code": "x123",
+    "price": 500,
+    "status": true,
+    "stock": 10,
+    "category": "Test",
+    "thumbnails": []
+  },
+  {
+    "id": 5,
+    "title": "Producto para probar",
+    "description": "nuevo",
+    "price": 2500,
+    "code": "X555",
+    "stock": 15,
+    "category": "Test",
+    "status": true
   }
 ]
