@@ -43,5 +43,35 @@
     "stock": 15,
     "category": "Test",
     "status": true
+  },
+  {
+    "id": 6,
+    "title": "Cartera",
+    "description": "Cartera amplia",
+    "price": 10,
+    "code": "58624",
+    "stock": 30,
+    "category": "marroquinería",
+    "status": true
+  },
+  {
+    "id": 7,
+    "title": "Zapatos",
+    "description": "zapatos talle 45",
+    "price": 12,
+    "code": "JSF358",
+    "stock": 1,
+    "category": "ZAPATILLAS",
+    "status": true
+  },
+  {
+    "id": 8,
+    "title": "Celular",
+    "description": "Dispositivo ",
+    "price": 350,
+    "code": "TRQ658",
+    "stock": 20,
+    "category": "Electrónico",
+    "status": true
   }
 ]

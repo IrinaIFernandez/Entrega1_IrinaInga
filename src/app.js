@@ -1,21 +1,12 @@
 import express from "express";
 import handlebars from "express-handlebars";
-import { Server } from "socket.io";
-import { createServer } from "http";
+import mongoose from "mongoose";
 
 import productsRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.routes.js";
 import viewsRouter from "./routes/views.routes.js";
 
 const app = express();
-const httpServer = createServer(app);
-
-const io = new Server(httpServer);
-
-let ioInstance;
-ioInstance = io;
-
-export const getIO = () => ioInstance;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -31,14 +22,15 @@ app.use("/api/products", productsRouter);
 app.use("/api/carts", cartsRouter);
 app.use("/", viewsRouter);
 
-io.on("connection", (socket) => {
-    console.log("Cliente conectado");
+//mongoo
 
-    socket.on("disconnect", () => {
-        console.log("Cliente desconectado");
-    });
-});
+mongoose.connect(
+  "mongodb+srv://fernandezirina14_db_user:SSS7tMP6FDAd6N37@irina.dkufbvc.mongodb.net/entregaFinal?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true&appName=Irina"
+)
+  .then(() => console.log("Mongo Atlas conectado ✔"))
+  .catch(err => console.log("Error al conectar Atlas:", err));
 
-httpServer.listen(8080, () => {
-    console.log("Servidor corriendo en http://localhost:8080");
+
+app.listen(8080, () => {
+  console.log("Servidor corriendo en http://localhost:8080");
 });
